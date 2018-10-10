@@ -1,118 +1,136 @@
-<html>
-                <head>
-                    <title>My Blog</title>
-                </head>
-                
-                <body>
-                    <!-- header start -->
-                    <div id="header" class="section">
-                        <h1>Steve Liao</h1>
-                        <style>
-                            h1{
-                            text-align: center;
-                            color:gray;
-                            border: 3px solid green;
-                        }
-                        </style>
-                    </div>
-                    <img class="sl" src="Image/sl1.jpg" alt="my silly face">
-                    <style>
-                    img.sl {
-                        width: 40%;
-                        display: block;
-                        margin-left: auto;
-                        margin-right: auto;
-                        height: auto;
-                    }
-                        </style>
-                    <div class="section">
-                     
-                    <div class="section">
-                        <image></image>
-                            <h1><span>About Me</span></h1>
-                            <p>
-                                Hey! I'm <strong>Steve</strong>. I am from Taiwan.  I work for a smartphone maker as a BI analyst.  I am new to coding and am excited to learn more and more each day.  
-                            </p>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/tWaGF1pz1uo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                  
-                    <!-- My Skills section start -->
-                    <div class="section">
-                        <h1><span>My Skills</span></h1>
-                        <ul>
-                            <li>HTML <br />
-                                <progress min="0" max="100" value="20"></progress>
-                            </li>
-                            <li>MySQL <br />
-                                <progress min="0" max="100" value="50"></progress>
-                            </li>
-                            <li>Python <br />
-                                <progress min="0" max="100" value="50"></progress>
-                            </li>
-                            <li>Tableau <br />
-                                <progress min="0" max="100" value="80"></progress>
-                            </li>
-                        </ul>
-                    </div>
+<!DOCTYPE html>
+<html lang="en-us">
 
-                    
-                    
-                     <!-- Media section start -->
-                    <div class="section">
-                        <h1><span>My Country: Taiwan</span></h1>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HaWfiFrGqoc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <!-- Media section end -->
-                    
-                    <!-- Form section start -->
-                   <div class="section">
-                        <h1><span>Contact Me</span></h1>
-                        
-                        <svg class="face" height="100" width="100">
-                            <circle cx="50" cy="50" r="50" fill="#FDD835"/>
-                            <circle cx="30" cy="30" r="10" fill="#FFFFFF"/>
-                            <circle cx="70" cy="30" r="10" fill="#FFFFFF"/>
-                            <circle cx="30" cy="30" r="5" fill="#000000"/>
-                            <circle cx="70" cy="30" r="5" fill="#000000"/>
-                            <path d="M 30 70 q 20 20 40 0" stroke="#FFFFFF" stroke-width="5" fill="none" />
-                        </svg>
-                             
-                        <form>
-                            <input name="name" placeholder="Name" type="text" required /><br/>
-                            <input name="email" placeholder="Email" type="email" required /><br/>
-                            <textarea name="message" placeholder="Message" required ></textarea>
-                            <input type="submit" value="SEND" class="submit" />
-                        </form>
-                    </div>
-                    <!-- Form section end -->
-                    
-                    <!-- Contacts section start -->
-                    <div class="section" id="contacts">
-                        <h1><span>Follow Me</span></h1>
-                        <div>
-                            <a href="https://www.linkedin.com/in/steveliaomochi/" target="_blank">
-                                <img alt="LinkedIn" src="Image/download.png" />
-                            </a>
-                            <a href="https://www.facebook.com/steveflyaway" target = "_blank">
-                                <img alt="Facebook" src="https://www.sololearn.com/Uploads/icons/facebook.png"/>
-                            </a>
-                            <a href="">
-                                <img alt="Twitter" src="https://www.sololearn.com/Uploads/icons/twitter.png" />
-                            </a>
-                            <style>
-                            img.#contacts {
-                        width: 20%;
-                        display: block;
-                        margin-left: auto;
-                        margin-right: auto;
-                        height: auto;}
-                        </style>
-                        </div>
-                    </div>
-                    <!-- Contacts section end -->
-                    
+<head>
 
-                    
-                </body>
-            </html> </head>
-</html>
+  <meta charset="UTF-8">
+  <title>Lattitude</title>
+  <!--    Google Fonts-->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!--Fontawesom-->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!--Animated CSS-->
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!--Bootstrap Carousel-->
+  <link type="text/css" rel="stylesheet" href="css/carousel.css" />
+
+  <link rel="stylesheet" href="css/isotope/style.css">
+
+  <!--Main Stylesheet-->
+  <link href="css/style.css" rel="stylesheet">
+  <!--Responsive Framework-->
+  <link href="css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#header">
+
+        <!--Start Hedaer Section-->
+        <section id="header">
+            <div class="header-area">
+        <div class="header_menu text-center" data-spy="affix" data-offset-top="50" id="nav">
+                <div class="container">
+                    <nav class="navbar navbar-default zero_mp ">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand custom_navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <!--End of navbar-header-->
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse zero_mp" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-left main_menu">
+                                <li class="active"><a href="#header">Home <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#welcome">about</a></li>
+                                <li><a href="#portfolio">project</a></li>
+                                <li><a here="#comparison">comparison</a></li>
+                                <li><a here=#data#>data</a></li>
+                                <li class="nav-item dropdown" id="dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">plots</a>
+                                        <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="#">Max Temperature</a>
+                                          <a class="dropdown-item" href="#">Humidity</a>
+                                          <a class="dropdown-item" href="#">Cloudiness</a>
+                                          <a class="dropdown-item" href="#">Wind Spead</a>
+                                        </div>
+                                      </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </nav>
+                    <!--End of nav-->
+                </div>
+                <!--End of container-->
+            </div>
+            <!--End of header menu-->
+        </div>
+        <!--end of header area-->
+    </section>
+    <!--End of Hedaer Section-->
+
+    
+    <!-- Creates the Overall Grid -->
+    <div class="container">
+  
+      <!-- Row 1 -->
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Summary: Lattitude vs. X</h1>
+        </div>
+
+      <div class = "row">
+        <div class ="col-md-12">
+            <img src ="Resources/assets/images/Fig1.png" class="rounded">
+        <p>The purpose of this project was to analyze how weather changes as you get closer to
+                the equator. To acomplish this analysis, we first pulled data from the OpenWeatherMap
+                API to assemble a dataset on over 500 cities.</p>
+        
+        <p>After assembling the dadaset, we use Matplotlib to plot various aspects of the weather vs.
+            lattitde.  Factors we looked at included: temperature, cloudiness, wind speed, and humidity.
+            This side provides the source data and visualizations created as part of the analysis, as well
+            as explanations and descriptions of any trends and correlations witnessed.
+            </p>
+        </div>
+
+        <div class="container" id="viz">
+  
+                <!-- Row 1 -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <h1>Visualizations</h1>
+                  </div>
+                  <div class = "row">
+                        <div class ="col-md-6">
+                            <img src="Resources/assets/images/Fig1.png">
+                            </div>
+                        <div class ="col-md-6"> 
+                            <img src="Resources/assets/images/Fig2.png">
+                            </div>
+                        <div class = "row">
+                            <div class ="col-md-6">
+                            <img src="Resources/assets/images/Fig3.png">
+                            </div>
+                            <div class ="col-md-6"> 
+                            <img src="Resources/assets/images/Fig4.png">
+                            </div>
+                </div>
+
+
+
+
+ 
