@@ -1,136 +1,81 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
 
 <head>
-
-  <meta charset="UTF-8">
-  <title>Lattitude</title>
-  <!--    Google Fonts-->
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-  <!--Fontawesom-->
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-
-  <!--Animated CSS-->
-  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
-
-  <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!--Bootstrap Carousel-->
-  <link type="text/css" rel="stylesheet" href="css/carousel.css" />
-
-  <link rel="stylesheet" href="css/isotope/style.css">
-
-  <!--Main Stylesheet-->
-  <link href="css/style.css" rel="stylesheet">
-  <!--Responsive Framework-->
-  <link href="css/responsive.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <meta charset="utf-8">
+  <title>UFO Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
-  <!-- Bootstrap CDN -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body data-spy="scroll" data-target="#header">
 
-        <!--Start Hedaer Section-->
-        <section id="header">
-            <div class="header-area">
-        <div class="header_menu text-center" data-spy="affix" data-offset-top="50" id="nav">
-                <div class="container">
-                    <nav class="navbar navbar-default zero_mp ">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand custom_navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
-                        </div>
-                        <!--End of navbar-header-->
 
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse zero_mp" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-left main_menu">
-                                <li class="active"><a href="#header">Home <span class="sr-only">(current)</span></a></li>
-                                <li><a href="https://www.linkedin.com/in/steveliaomochi/">about</a></li>
-                                <li><a href="#portfolio">project</a></li>
-                                <li><a href="comparison.html">comparison</a></li>
-                                <li><a href="data.html">data</a></li>
-                                <li class="nav-item dropdown" id="dropdown">
-                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">plots</a>
-                                        <div class="dropdown-menu">
-                                          <a class="dropdown-item" href="#">Max Temperature</a>
-                                          <a class="dropdown-item" href="#">Humidity</a>
-                                          <a class="dropdown-item" href="#">Cloudiness</a>
-                                          <a class="dropdown-item" href="#">Wind Spead</a>
-                                        </div>
-                                      </li>
-                            </ul>
-                        </div>
-                        <!-- /.navbar-collapse -->
-                    </nav>
-                    <!--End of nav-->
-                </div>
-                <!--End of container-->
-            </div>
-            <!--End of header menu-->
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">UFO Sightings
+            <img class="nav-ufo" src="static/images/ufo.svg">
+          </a>
         </div>
-        <!--end of header area-->
-    </section>
-    <!--End of Hedaer Section-->
-
-    
-    <!-- Creates the Overall Grid -->
+      </div>
+    </nav>
+    <div class="hero text-center">
+      <h1>UFO Sightings</h1>
+      <p>The Truth is Out There</p>
+    </div>
     <div class="container">
-  
-      <!-- Row 1 -->
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Summary: Lattitude vs. X</h1>
-        </div>
-
-      <div class = "row">
-        <div class ="col-md-12">
-            <img src ="Resources/assets/images/Fig1.png" class="rounded">
-        <p>The purpose of this project was to analyze how weather changes as you get closer to
-                the equator. To acomplish this analysis, we first pulled data from the OpenWeatherMap
-                API to assemble a dataset on over 500 cities.</p>
-        
-        <p>After assembling the dadaset, we use Matplotlib to plot various aspects of the weather vs.
-            lattitde.  Factors we looked at included: temperature, cloudiness, wind speed, and humidity.
-            This side provides the source data and visualizations created as part of the analysis, as well
-            as explanations and descriptions of any trends and correlations witnessed.
-            </p>
-        </div>
-
-        <div class="container" id="viz">
-  
-                <!-- Row 1 -->
-                <div class="row">
-                  <div class="col-md-12">
-                    <h1>Visualizations</h1>
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="date">Enter a Date</label>
+                        <input class="form-control" id="datetime" type="text" placeholder="1/1/2010">
+                      </li>
+                    </ul>
                   </div>
-                  <div class = "row">
-                        <div class ="col-md-6">
-                            <img src="Resources/assets/images/Fig1.png">
-                            </div>
-                        <div class ="col-md-6"> 
-                            <img src="Resources/assets/images/Fig2.png">
-                            </div>
-                        <div class = "row">
-                            <div class ="col-md-6">
-                            <img src="Resources/assets/images/Fig3.png">
-                            </div>
-                            <div class ="col-md-6"> 
-                            <img src="Resources/assets/images/Fig4.png">
-                            </div>
-                </div>
+                  <button id="filter-btn" type="submit" handleSearchButtonClick="handleSearchButtClick()" class="btn btn-default">Filter Table</button>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="table-head">Date</th>
+                  <th class="table-head">City</th>
+                  <th class="table-head">State</th>
+                  <th class="table-head">Country</th>
+                  <th class="table-head">Shape</th>
+                  <th class="table-head">Duration</th>
+                  <th class="table-head">Comments</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <span class="bottom">UFO Sightings</span>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/sl3.js"></script>
+</body>
 
 
-
-
- 
+</html>
