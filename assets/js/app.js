@@ -20,7 +20,7 @@ var chart = svg.append('g');
 d3.select(".chart").append("div").attr("class", "tooltip").style("opacity", 0);
 
 //load csv file
-d3.csv("../data/data.csv").then(function(healthData, err) {
+d3.csv("assets/data/data.csv").then(function(healthData, err) {
     if(err) throw err;
 
     healthData.forEach(function(data) {
